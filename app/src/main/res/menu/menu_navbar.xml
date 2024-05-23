@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/mNews"
+        android:icon="@drawable/baseline_newspaper"
+        android:title="News" />
+    <item
+        android:id="@+id/mGlobal"
+        android:icon="@drawable/baseline_language"
+        android:title="Global" />
+    <item
+        android:id="@+id/mForYou"
+        android:icon="@drawable/baseline_star"
+        android:title="For You" />
+    <item
+        android:id="@+id/mTrendings"
+        android:icon="@drawable/baseline_art_track"
+        android:title="Trendings" />
+
+
+</menu>
