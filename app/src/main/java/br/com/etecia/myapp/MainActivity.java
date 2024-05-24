@@ -11,12 +11,13 @@ import android.widget.Toast;
 
 import com.google.android.material.appbar.MaterialToolbar;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
+import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.android.material.navigation.NavigationBarView;
 
 public class MainActivity extends AppCompatActivity {
     BottomNavigationView bottomNavView;
     MaterialToolbar idTopBar;
-
+    FloatingActionButton idFAB;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -32,7 +33,15 @@ public class MainActivity extends AppCompatActivity {
                         "Voltar", Toast.LENGTH_SHORT).show();
             }
         });
-
+        //Criando evento de clique no FAB
+        idFAB.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Toast.makeText(getApplicationContext(),
+                        "Cliquei no FAB",
+                        Toast.LENGTH_SHORT).show();
+            }
+        });
         //criar evento de idTopBar
         idTopBar.setOnMenuItemClickListener(new Toolbar.OnMenuItemClickListener() {
             @Override

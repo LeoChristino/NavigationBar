@@ -20,6 +20,16 @@
             app:title="Window" />
     </com.google.android.material.appbar.AppBarLayout>
 
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/idFAB"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@id/bottomNavView"
+        android:layout_marginTop="500dp"
+        android:layout_marginRight="16dp"
+        android:contentDescription="editar"
+        android:src="@drawable/baseline_edit" />
+
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/bottomNavView"
         android:layout_width="match_parent"
